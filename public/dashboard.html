@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+<h1>Dashboard</h1>
+
+<!-- MENU -->
+<nav>
+  <a href="dashboard.html">Dashboard</a> |
+  <a href="catways.html">Catways</a> |
+  <a href="users.html">Users</a> |
+  <a href="docs.html">API Docs</a> |
+  <button onclick="logout()">Logout</button>
+</nav>
+
+<hr>
+
+<!-- USER INFO -->
+<p id="userInfo"></p>
+<p id="date"></p>
+
+<hr>
+
+<h3>Reservations</h3>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Client</th>
+      <th>Boat</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="reservationsList"></tbody>
+</table>
+
+
+<h3>Add Reservation</h3>
+
+<form id="reservationForm">
+  <input type="text" id="clientName" placeholder="Client Name" required />
+
+  <input type="text" id="boatName" placeholder="Boat Name" required />
+
+  <input type="number" id="catwayNumber" placeholder="Catway Number" required />
+
+  <input type="date" id="startDate" required />
+
+  <input type="date" id="endDate" required />
+
+  <button type="submit">Add Reservation</button>
+</form>
+
+<hr>
+
+<script src="app.js"></script>
+
+</body>
+</html>

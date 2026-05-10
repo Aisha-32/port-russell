@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>API Documentation</title>
+</head>
+
+<body>
+
+<h1>Port Russell API Documentation</h1>
+
+<nav>
+  <a href="dashboard.html">Dashboard</a> |
+  <a href="catways.html">Catways</a> |
+  <a href="users.html">Users</a> |
+  <a href="docs.html">API Docs</a> |
+  <button onclick="logout()">Logout</button>
+</nav>
+
+<hr>
+
+<h2>Authentication</h2>
+
+<table border="1">
+
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Route</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td>POST</td>
+      <td>/login</td>
+      <td>User login</td>
+    </tr>
+
+    <tr>
+      <td>GET</td>
+      <td>/logout</td>
+      <td>User logout</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+<hr>
+
+<h2>Users</h2>
+
+<table border="1">
+
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Route</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td>GET</td>
+      <td>/users</td>
+      <td>Get all users</td>
+    </tr>
+
+    <tr>
+      <td>GET</td>
+      <td>/users/:email</td>
+      <td>Get user by email</td>
+    </tr>
+
+    <tr>
+      <td>POST</td>
+      <td>/users</td>
+      <td>Create user</td>
+    </tr>
+
+    <tr>
+      <td>PUT</td>
+      <td>/users/:email</td>
+      <td>Update user</td>
+    </tr>
+
+    <tr>
+      <td>DELETE</td>
+      <td>/users/:email</td>
+      <td>Delete user</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+<hr>
+
+<h2>Catways</h2>
+
+<table border="1">
+
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Route</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td>GET</td>
+      <td>/catways</td>
+      <td>Get all catways</td>
+    </tr>
+
+    <tr>
+      <td>GET</td>
+      <td>/catways/:id</td>
+      <td>Get one catway</td>
+    </tr>
+
+    <tr>
+      <td>POST</td>
+      <td>/catways</td>
+      <td>Create catway</td>
+    </tr>
+
+    <tr>
+      <td>PUT</td>
+      <td>/catways/:id</td>
+      <td>Update catway state</td>
+    </tr>
+
+    <tr>
+      <td>DELETE</td>
+      <td>/catways/:id</td>
+      <td>Delete catway</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+<hr>
+
+<h2>Reservations</h2>
+
+<table border="1">
+
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Route</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td>GET</td>
+      <td>/reservations</td>
+      <td>Get reservations</td>
+    </tr>
+
+    <tr>
+      <td>POST</td>
+      <td>/catways/:id/reservations</td>
+      <td>Create reservation</td>
+    </tr>
+
+    <tr>
+      <td>PUT</td>
+      <td>/catways/:id/reservations/:reservationId</td>
+      <td>Update reservation</td>
+    </tr>
+
+    <tr>
+      <td>DELETE</td>
+      <td>/catways/:id/reservations/:reservationId</td>
+      <td>Delete reservation</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Catways</title>
+</head>
+
+<body>
+
+<h1>Catways Management</h1>
+
+<nav>
+  <a href="dashboard.html">Dashboard</a> |
+  <a href="catways.html">Catways</a> |
+  <a href="users.html">Users</a> |
+  <a href="docs.html">API Docs</a> |
+  <button onclick="logout()">Logout</button>
+</nav>
+
+<hr>
+
+<h3>Add Catway</h3>
+
+<form id="catwayForm">
+
+  <input
+    type="number"
+    id="catwayNumber"
+    placeholder="Catway Number"
+    required
+  />
+
+  <input
+    type="text"
+    id="catwayType"
+    placeholder="Type (long / short)"
+    required
+  />
+
+  <input
+    type="text"
+    id="catwayState"
+    placeholder="State"
+    required
+  />
+
+  <button type="submit">Add Catway</button>
+
+</form>
+
+<hr>
+
+<h3>All Catways</h3>
+
+<table border="1">
+
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Type</th>
+      <th>State</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody id="catwaysList"></tbody>
+
+</table>
+
+<script src="app.js"></script>
+
+</body>
+</html>
